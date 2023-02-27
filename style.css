@@ -1,0 +1,16 @@
+/* Layout */
+
+
+/* Style */
+
+:root {
+  --main-accent-color: #1b66c9;
+  --link-active-color: #1a0dab;
+  --footer-fg-color: #202124;
+  --footer-bg-color: #70757a;
+  --footer-border-bg-color: #dadce0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
