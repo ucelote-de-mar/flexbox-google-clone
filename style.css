@@ -1,7 +1,140 @@
-/* Layout */
+/***** Layout *****/
 
+/* Resets */
 
-/* Style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+/* helpers */
+
+/* body > div { */
+/*   background-color: azure; */
+/*   border: 1px solid #555; */
+/* } */
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* header */
+
+.header {
+  padding: 10px;
+  flex: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header > .nav_services {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header > .nav_services #more_services {
+  display: flex;
+  align-items: center;
+}
+
+/* search-section */
+
+.main {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main > .banner_container {
+  width: 300px;
+}
+
+.main > .banner_container > img {
+  width: 100%;
+}
+
+.main > .search_box {
+  padding: 10px 20px;
+  width: 560px;
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+}
+
+.main > .search_box > p {
+  flex: 0 0 40px;
+}
+
+.main > .search_box > #search_by_image {
+  flex: 0 0 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main > .search_box > #search_input {
+  flex: 1;
+}
+
+.main > .search_buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.main > .change_lang {
+  display: flex;
+  gap: 10px;
+}
+
+/* footer */
+
+.footer {
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer > .current_lang {
+  padding: 10px;
+}
+
+.footer > .footer_separation {
+  border-top-width: 1px;
+  border-bottom-width: 0px;
+}
+
+.footer > .more {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer > .more > .information,
+.footer > .more > .settings {
+  display: flex;
+  gap: 20px;
+}
+
+/***** Style *****/
 
 :root {
   --main-accent-color: #1b66c9;
@@ -13,4 +146,5 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  font-size: 13px;
 }
