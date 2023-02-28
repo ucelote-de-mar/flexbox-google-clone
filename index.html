@@ -13,64 +13,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <title>Google</title>
   </head>
   <body>
+    <div class="header">
+      <ul class="nav_services">
+        <li><a href="">Gmail</a></li>
+        <li><a href="">Images</a></li>
+        <li>
+          <button id="more_services">
+            <span class="material-icons-outlined">apps</span>
+          </button>
+        </li>
+        <li><button id="sign_in">Sign in</button></li>
+      </ul>
+    </div>
 
-      <div class="header">
-        <ul class="nav_services">
-          <li><a href="">Gmail</a></li>
-          <li><a>Images</a></li>
-          <li>
-            <button id="more_services">
-              <span class="material-icons-outlined">apps</span>
-            </button>
-          </li>
-          <li><button id="sign_in">Sign in</button></li>
+    <div class="main">
+      <div class="banner_container">
+        <img src="media/banner_google.png" alt="Google banner" class="banner" />
+      </div>
+
+      <div class="search_box">
+        <p><span class="material-icons-outlined">search</span></p>
+        <input type="text" id="search_input" />
+        <button id="search_by_image">
+          <img
+            src="media/icon_google-lens.svg"
+            alt="Search by image"
+            width="20px"
+          />
+        </button>
+      </div>
+
+      <div class="search_buttons">
+        <button id="search">Google Search</button>
+        <button id="feeling-lucky">I'm Feeling Lucky</button>
+      </div>
+
+      <ul class="change_lang">
+        <li>Google offered in:</li>
+        <li><a href="">Español (Latinoamérica)</a></li>
+        <li><a href="">Quechua</a></li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      <div class="current_lang">Peru</div>
+      <hr class="footer_separation" />
+      <div class="more">
+        <ul class="information">
+          <li><a href="">About</a></li>
+          <li><a href="">Advertising</a></li>
+          <li><a href="">Business</a></li>
+          <li><a href="">How Search works</a></li>
+        </ul>
+        <ul class="settings">
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Settings</a></li>
         </ul>
       </div>
-
-      <div class="main">
-        <div class="banner_container"><img src="media/banner_google.png" alt="Google banner" class="banner"/></div>
-
-        <div class="search_box">
-          <p><span class="material-icons-outlined">search</span></p>
-          <input type="text" id="search_input">
-          <button id="search_by_image"><img src="media/icon_google-lens.svg" alt="Search by image" width="20px"/></button>
-        </div>
-
-        <div class="search_buttons">
-          <button id="search">Google Search</button>
-          <button id="feeling-lucky">I'm Feeling Lucky</button>
-        </div>
-
-        <ul class="change_lang">
-          <li>Google offered in: </li>
-          <li><a href="">Español (Latinoamérica)</a></li>
-          <li><a href="">Quechua</a></li>
-        </ul>
-      </div>
-
-      <div class="footer">
-        <div class="current_lang">Peru</div>
-        <hr class="footer_separation">
-        <div class="more">
-          <ul class="information">
-            <li><a href="">About</a></li>
-            <li><a href="">Advertising</a></li>
-            <li><a href="">Business</a></li>
-            <li><a href="">How Search works</a></li>
-          </ul>
-          <ul class="settings">
-            <li><a href="">Privacy</a></li>
-            <li><a href="">Terms</a></li>
-            <li><a href="">Settings</a></li>
-          </ul>
-        </div>
-      </div>
-
+    </div>
   </body>
 </html>
